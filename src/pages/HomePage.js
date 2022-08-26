@@ -31,7 +31,7 @@ const HomePage = () => {
     
         {keyword ? <Link to='/'>Go Back</Link>: <><ProductCarousel/> <hr></hr></> }
         
-        <h1>Lastest Product</h1>
+        <h1>Latest Product</h1>
         {loading ? <Loader/> 
          : error ? <Message variant='danger'>{error}</Message> 
           : (
