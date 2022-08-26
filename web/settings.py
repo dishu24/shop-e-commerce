@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-+$x32=mdirb9d80c6zqr@+b7kd+34*(h_)bbesm6&1-us60x$6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['e-commerce-shop-24.herokuapp.com','127.0.0.1','localhost:3000/']
 
 
 # Application definition
@@ -140,8 +140,8 @@ STATICFILES_DIRS = [
     BASE_DIR / 'frontend/build/static'
 ]
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFileStorage'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'static/images')
 
